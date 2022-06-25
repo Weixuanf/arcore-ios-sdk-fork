@@ -19,7 +19,8 @@
 		3E7EDD4327F388F900625E56 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E7EDD4227F388F900625E56 /* CoreLocation.framework */; };
 		3E7EDD4527F388FF00625E56 /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E7EDD4427F388FF00625E56 /* SceneKit.framework */; };
 		3E7EDD4727F3890500625E56 /* ModelIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E7EDD4627F3890500625E56 /* ModelIO.framework */; };
-		8ADFCA14DF75E1EBA0447A88 /* libPods-GeospatialExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD6E758FE502DCA52F6D36DB /* libPods-GeospatialExample.a */; };
+		C50ECEDAF91872A14FCF21DE /* Pods_GeospatialExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48A226615C8AF64A4B995D6B /* Pods_GeospatialExample.framework */; };
+		F4C0B6682866DE8C003235F7 /* empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C0B6672866DE8C003235F7 /* empty.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,8 +41,10 @@
 		3E7EDD4427F388FF00625E56 /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
 		3E7EDD4627F3890500625E56 /* ModelIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ModelIO.framework; path = System/Library/Frameworks/ModelIO.framework; sourceTree = SDKROOT; };
 		418A009D33E345591EA5736E /* Pods-GeospatialExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeospatialExample.release.xcconfig"; path = "Target Support Files/Pods-GeospatialExample/Pods-GeospatialExample.release.xcconfig"; sourceTree = "<group>"; };
-		AD6E758FE502DCA52F6D36DB /* libPods-GeospatialExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GeospatialExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		48A226615C8AF64A4B995D6B /* Pods_GeospatialExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeospatialExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB43D2F5665689DB88918253 /* Pods-GeospatialExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeospatialExample.debug.xcconfig"; path = "Target Support Files/Pods-GeospatialExample/Pods-GeospatialExample.debug.xcconfig"; sourceTree = "<group>"; };
+		F4C0B6662866DE8C003235F7 /* GeospatialExample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GeospatialExample-Bridging-Header.h"; sourceTree = "<group>"; };
+		F4C0B6672866DE8C003235F7 /* empty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = empty.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +56,7 @@
 				3E7EDD4527F388FF00625E56 /* SceneKit.framework in Frameworks */,
 				3E7EDD4327F388F900625E56 /* CoreLocation.framework in Frameworks */,
 				3E7EDD4127F388F200625E56 /* ARKit.framework in Frameworks */,
-				8ADFCA14DF75E1EBA0447A88 /* libPods-GeospatialExample.a in Frameworks */,
+				C50ECEDAF91872A14FCF21DE /* Pods_GeospatialExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,7 +70,7 @@
 				3E7EDD4427F388FF00625E56 /* SceneKit.framework */,
 				3E7EDD4227F388F900625E56 /* CoreLocation.framework */,
 				3E7EDD4027F388F200625E56 /* ARKit.framework */,
-				AD6E758FE502DCA52F6D36DB /* libPods-GeospatialExample.a */,
+				48A226615C8AF64A4B995D6B /* Pods_GeospatialExample.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -104,6 +107,8 @@
 				3E1BD023268A5E3B004480BC /* LaunchScreen.storyboard */,
 				3E1BD026268A5E3B004480BC /* Info.plist */,
 				3E1BD027268A5E3B004480BC /* main.m */,
+				F4C0B6672866DE8C003235F7 /* empty.swift */,
+				F4C0B6662866DE8C003235F7 /* GeospatialExample-Bridging-Header.h */,
 			);
 			path = GeospatialExample;
 			sourceTree = "<group>";
@@ -149,6 +154,7 @@
 				TargetAttributes = {
 					3E1BD011268A5E39004480BC = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1300;
 					};
 				};
 			};
@@ -233,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E1BD01D268A5E39004480BC /* ViewController.m in Sources */,
+				F4C0B6682866DE8C003235F7 /* empty.swift in Sources */,
 				3E1BD017268A5E39004480BC /* AppDelegate.m in Sources */,
 				3E1BD028268A5E3B004480BC /* main.m in Sources */,
 			);
@@ -378,9 +385,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TR6K454PN2;
 				INFOPLIST_FILE = "$(SRCROOT)/GeospatialExample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -389,6 +397,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.google.ARGeospatial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "GeospatialExample/GeospatialExample-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -399,9 +410,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TR6K454PN2;
 				INFOPLIST_FILE = "$(SRCROOT)/GeospatialExample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -410,6 +422,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.google.ARGeospatial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "GeospatialExample/GeospatialExample-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
